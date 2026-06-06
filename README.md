@@ -25,8 +25,14 @@ A complete lead management CRM built with React, Express, MongoDB, and Recharts.
 Add screenshots here after running the app locally.
 
 - Dashboard screenshot placeholder
+  <img width="1532" height="698" alt="image" src="https://github.com/user-attachments/assets/5c9a1916-313d-4519-a1d8-89177fd60fa6" />
+
 - Leads table screenshot placeholder
+  <img width="1536" height="701" alt="image" src="https://github.com/user-attachments/assets/4d373ec6-167d-4972-9549-d6bc0d982aa7" />
+
 - Lead detail screenshot placeholder
+  <img width="1536" height="698" alt="image" src="https://github.com/user-attachments/assets/af239b4a-88a7-448a-ac51-2d8a6dc7661e" />
+
 
 ## Prerequisites
 
