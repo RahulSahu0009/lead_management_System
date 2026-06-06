@@ -1,0 +1,32 @@
+.lead-card {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.lead-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.lead-card__header h3 {
+  margin: 0 0 6px;
+  font-family: 'Sora', sans-serif;
+}
+
+.lead-card__header p,
+.lead-card__body {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.lead-card__body {
+  display: grid;
+  gap: 6px;
+}

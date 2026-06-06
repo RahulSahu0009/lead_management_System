@@ -1,0 +1,107 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  padding: 24px 18px;
+  background: linear-gradient(180deg, var(--color-text) 0%, var(--color-text-dark) 100%);
+  color: var(--color-white);
+  z-index: 40;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 32px;
+  transition: transform var(--transition-base), width var(--transition-base);
+}
+
+.sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 4px 6px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar__logo {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+}
+
+.sidebar__brand-copy strong,
+.sidebar__brand-copy span {
+  display: block;
+  line-height: 1.1;
+}
+
+.sidebar__brand-copy span {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.92rem;
+}
+
+.sidebar__nav {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  color: rgba(255, 255, 255, 0.82);
+  border-left: 4px solid transparent;
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.sidebar__link:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--color-white);
+}
+
+.sidebar__link--active {
+  background: var(--color-accent-bg);
+  color: var(--color-accent);
+  border-left-color: var(--color-accent);
+}
+
+.sidebar__icon {
+  width: 24px;
+  text-align: center;
+  font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: var(--sidebar-collapsed-width);
+    padding-inline: 12px;
+  }
+
+  .sidebar--open {
+    transform: translateX(0);
+  }
+
+  .sidebar__brand-copy,
+  .sidebar__label {
+    display: none;
+  }
+
+  .sidebar__brand {
+    justify-content: center;
+    padding-bottom: 14px;
+  }
+
+  .sidebar__link {
+    justify-content: center;
+    padding-inline: 10px;
+  }
+}
